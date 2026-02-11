@@ -1,0 +1,70 @@
+html, body {  
+    margin: 0 !important;  
+    padding: 0 !important;  
+    overflow: hidden;  
+    cursor: url('./images/pointer.png'), auto;  
+}  
+
+canvas {  
+    width: 100%;  
+    height: auto;  
+    background: #111;  
+}  
+
+#valentinesButton {  
+    display: none;  
+    position: absolute;  
+    background-color: #2d2dff;  
+    border: 2px solid #2d2dff;  
+    color: #fff;  
+    cursor: pointer;  
+    height: 50px;  
+    font-size: 16px;  
+    font-family: "Comic Sans MS", cursive, sans-serif;  
+    border-radius: 10px;  
+    top: calc(50% + 150px); /* Adjust based on canvas height and text position */  
+    left: 50%;  
+    transform: translateX(-50%);  
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;  
+  }  
+
+  #valentinesButton:hover {  
+    background-color: #1f1faa;  
+    color: #eee;  
+}
+
+#gifContainer {  
+    display: none;  
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    text-align: center;  
+    color: #fff;  
+    font-family: "Comic Sans MS", cursive, sans-serif;  
+    z-index: 10;  
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para resaltar */  
+    padding: 20px;  
+    border-radius: 15px;  
+    max-width: 80%;  
+}  
+
+#gifContainer h2 {  
+    font-size: 24px;  
+    margin-bottom: 20px;  
+    text-shadow: 0 0 10px rgba(45, 45, 255, 1);  
+}  
+
+#gifContainer img {  
+    width: 200px; /* Tamaño ajustable */  
+    height: auto;  
+    margin: 10px;  
+    border-radius: 10px;  
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); /* Brillo rojo romántico */  
+}  
+
+@media (max-width: 600px) {  
+    #gifContainer img {  
+        width: 150px; /* Más pequeño en móviles */  
+    }  
+}  
